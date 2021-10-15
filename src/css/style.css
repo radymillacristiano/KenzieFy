@@ -1,0 +1,271 @@
+/* Estilos Principais */
+
+body, main, div, section, ul, li, img, figure, p, head, nav, h2 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    /* text-decoration: none; */
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    /* background: linear-gradient(); pegar dps*/
+    background: black;
+    color: #f1f1f1;
+
+}
+
+/* Conteudo Principal */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+    /* SideBar */
+.sidebarMenu {
+    width: 15.5%;
+    padding: 30px;
+    height: calc(100% - 167px);
+}
+
+.sidebarMenu > img {
+    margin-bottom: 25px;
+}
+
+    /* Menu de Navegação
+.menuNavegacao{
+
+} */
+
+    /* Lista dos Links
+.links {
+
+} */
+
+.links > li{
+    margin-bottom: 17px;
+}
+.links > li > a {
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+.links > li > a > img {
+    width: 28px;
+    margin-right: 20px;
+}
+
+/* Seção das Músicas */
+.musicas {
+    width: 80%;
+}
+    /* Cabeçalho */
+.cabecalho {
+    background-image: url(../img/header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90px;
+    position: relative;
+    padding: 20px 80px;
+
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.user > img {
+    margin-right: 20px;
+}
+
+.user > h2 {
+    font-weight: lighter;
+}
+
+.qtdMusicas {
+    position: absolute;
+    left: 80px;
+    bottom: 20px;
+}
+
+/* .qtdMusicas > p {
+
+} */
+
+    /* Lista de Músicas */
+.areaListaMusicas {
+    padding: 20px 80px;
+}
+
+#btnPause {
+    background-color: #0047FF;
+    color: #f1f1f1;
+    border: none;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 7px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btnPause:hover {
+    background-color: #f1f1f1;
+    color: #0047FF;
+    box-shadow: 0 0 8px rgba(60, 138, 190, 0.719);
+}
+
+        /* Titulo da Tabela */
+.descricaoMusicas {
+    display: flex;
+    border-bottom: 2px solid #646464;
+    padding: 8px 56px;
+}
+
+.descricaoMusicas > .primeiroItem {
+    width: 60%;
+}
+
+.descricaoMusicas > p {
+    width: 25%;
+}
+
+        /* Lista */
+.listaDeMusicas {
+    height: 250px;
+    overflow-y: scroll;
+    cursor: pointer;
+}
+
+.listaDeMusicas > li {
+    display: flex;
+    border-bottom: 1px solid #646464;
+    padding: 8px 56px;
+    transition: 0.3s;
+    transition-timing-function: linear;
+}
+
+.listaDeMusicas > li:hover {
+    background-color: #688baf9f;
+}
+
+.listaDeMusicas > li > .primeiroItem {
+    width: 60%;
+}
+
+.listaDeMusicas > li > p {
+    width: 25%;
+}
+
+    /* Barra de Reprodução */
+.areaReproduzir {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 80px;
+    height: 104px;
+}
+
+        /* Informações */
+.infoMusicaAtual {
+    display: flex;
+    align-items: center;
+}
+
+.imgAlbumAtual {
+    margin-right: 40px;
+}
+
+/* .imgAlbumAtual > img {
+    
+} */
+
+.imgAlbumAtual > figcaption {
+    display: none;
+}
+
+/* .infoAlbum {
+
+} */
+
+.infoAlbum > h2 {
+    margin-bottom: 8px;
+}
+
+/* .infoAlbum > p {
+    
+}
+
+        /* Botões
+.areaReproduzirBtn {
+
+} */
+
+.areaReproduzirBtn > button{
+    width: 31px;
+    height: 31px;
+    background: transparent;
+    border: none;
+    background-position: center;
+    background-size: 23px;
+    background-repeat: no-repeat;
+}
+
+#btnReturn {
+    background-image: url(../img/previous.png);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btnReturn:hover {
+    /* -webkit-filter: drop-shadow(1px 1px 0 #023e8a)
+    drop-shadow(-1px -1px 0 #023e8a);
+    filter: drop-shadow(1px 1px 0 #023e8a) 
+    drop-shadow(-1px -1px 0 #023e8a); */
+    transform: scale(1.1);
+}
+
+#btnPlay {
+    background-image: url(../img/play.png);
+    background-size: cover;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btnPlay:hover {
+    box-shadow: 0 0 6px #48bfe3;
+    border-radius: 30px;
+    transform: scale(1.1);
+}
+
+#btnPlay.pause {
+    background-image: url(../img/pause.png);
+}
+
+#btnNext{
+    background-image: url(../img/next.png);
+    cursor: pointer;
+    transition: 0.3s;   
+}
+
+#btnNext:hover {
+    /* -webkit-filter: drop-shadow(1px 1px 0 #023e8a)
+    drop-shadow(-1px -1px 0 #023e8a);
+    filter: drop-shadow(1px 1px 0 #023e8a) 
+    drop-shadow(-1px -1px 0 #023e8a); */
+    transform: scale(1.1);
+}   
+
+        /* Volume
+.areaReproduzirVolume {
+
+} */
